@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seccion de productos</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="../static/js/apps.js"></script>
+  
+  <link rel="stylesheet" href="../static/css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+  crossorigin="anonymous"
+</head>
+
+
+<body>
+  <header>
+    <a href="{% url 'index'%}" class="logo"> 
+   <img src="../static/img/logo.png" alt="logo tienda">
+   
+   <h2 class="nombre-tienda"><img src="../static/img/fondopixel2.png" alt=""></h2>
+   <div class="contenedor"> <h1> llaveros</h1></div>
+</a>
+<nav> 
+  <a href="{% url 'index'%}" class="nav-link"><i class="fa-solid fa-house"></i> Inicio </a>
+       <a href="{% url 'productos'%}" class="nav-link"><i class="fa-solid fa-bag-shopping"></i> Productos </a>
+       
+      
+       <a href="{% url 'iniciarsesion' %}" class="nav-link"><i class="fa-solid fa-address-card"></i>Iniciar sesión </a>
+       <a href="{% url 'EditarPerfil_copy'%}" class="nav-link"><i class="fa-solid fa-user"></i> Editar perfil </a>
+       <a href="{% url 'Contacto' %}" class="nav-link"><i class="fa-solid fa-phone"></i> Contacto </a>
+      
+   
+   </header>
+   <div>
+   <div class="fondo2">
+   
+<div class="container">
+  <p>El valor de la UF para hoy es: <span id="uf-value"></span></p>
+  <p>El valor de la UTM para hoy es: <span id="utm-value"></span></p>
+<div class="row">
+{% for product in Products %}
+<div class="col-md-4">     
+        <div class="contenedor_producto">
+
+           
+            <div><img src="{{product.imagen.url}}"  alt="llavero 1" class="imgproducto"  > </div>
+            <h3>{{product.nombreProducto}}</h3><p>  {{product.precio}} <button>Añadir al carrito <i class="fa-solid fa-cart-shopping"></i></button> </p> </div>
+            <div class="col">
+        </div>
+        
+    </div> 
+    {%endfor%}
+ 
+  </div>    <div class="row"></div> </div></div></div>
+  </body>
+</html>

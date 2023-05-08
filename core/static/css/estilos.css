@@ -1,0 +1,240 @@
+.fondo{
+    background-image: url('../img/fondo2.jpg');
+    width: 100%;
+    height: 100vh;
+    border-style: solid ;
+    border-color: rgb(0, 0, 0);
+    border-width: 10px;
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+
+}
+a{
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+
+}
+.imgproducto{
+    width:300px;
+    height:300px;
+}
+header{
+    display:flex;
+    background-image: url(../img/fondohead.jpg);
+    min-height: 70px;
+    background-color: rgb(58, 0, 112);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    margin: 20px;
+    background: transparent;
+}
+
+nav a{
+font-weight: 600;
+padding-right: 10px;
+
+}
+nav a:hover{
+    color: aliceblue;
+}
+
+@media (max-width: 700px){
+  header{
+   flex-direction: column;
+
+  }
+nav{
+    padding: 10px 0px;
+}
+}
+
+
+
+.contenedor{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+ 
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenedor{
+width: 100%;
+max-width: 1200px;
+text-align: center;
+background-image: url('../img/fondo2.jpg');
+color: aliceblue;
+
+}
+
+.fondo2{
+    background-image: url('../img/fondo33.png');
+    width: 100%;
+    height: 100%;
+    border-style: solid ;
+    border-color: black;
+    border-width: 10px;
+
+}
+ 
+
+h1,h2,h3,h4,label,.hora{
+    color: white!important;
+}
+.btn-login{
+   text-decoration-color: white;
+   
+}
+
+
+p{
+    color: white;
+    text-align: left;
+}
+
+.nombre-tienda img{
+
+    height: 100px;
+    width: 400px ;
+}
+
+.contenedor h1{
+    text-align: center;
+    align-items: center;
+    background-color:black
+}
+
+.fondo3 {
+
+    background-image: url('../img/fondo33.png');
+    width: 100%;
+    height: 100vh;
+    border-style: solid ;
+    border-color: black;
+    border-width: 10px;
+
+}
+
+
+.fa-brands{
+    color: aliceblue;
+}
+
+.contenedor3{
+    width: 1000px;
+    height: 700px;
+    
+    text-align: center;
+    background-image: url('../img/gf1.jpg');
+    color: aliceblue;
+
+}
+.fotosportada img{
+    height: 200px;
+    width: 200px;
+}
+.fondo4{
+    background-image: url('../img/fondo33.png');
+    width: 100%;
+    height: 100vh;
+    border-style: solid ;
+    border-color: black;
+    border-width: 10px;
+
+}
+
+.fondo5{
+    background-image: url('../img/fondo33.png');
+    width: 100%;
+    height: 100vh;
+    border-style: solid ;
+    border-color: black;
+    border-width: 10px;
+
+}
+
+.fondo6{
+    background-image: url('../img/fondo33.png');
+    width:100%;
+    height: 100vh;
+    border-style: solid ;
+    border-color: black;
+    border-width: 10px;
+
+}
+.nombre-tienda{
+
+opacity: 1;
+background: transparent;
+
+}
+.a{
+
+background-color: transparent;
+}
+
+.container{
+   color: white;
+}
+.Contenedor5 img{
+    
+    width: 110px;
+    height: 110px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+flex-wrap: wrap;
+gap: 50px;
+margin-bottom: 20px;
+}
+
+.header3{
+
+    
+    background-position: center;
+    height: 300px;
+    color: white;
+}
+
+.header3 h1{
+text-align: center;
+font-size: 35px;
+color: white;
+padding: 30px,0;
+
+}
+
+.Contenedor5{
+    border: 10px #4e0055;
+    border-style: solid;
+    border-radius: 100px ,50px;
+}
+span{
+    color: white;
+}
+.fondo7{
+    background-image: url('../img/fondo33.png');
+    width:100%;
+    height: 100vh;
+    border-style: solid ;
+    border-color: black;
+    border-width: 10px;}
