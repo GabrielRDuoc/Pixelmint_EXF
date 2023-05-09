@@ -81,9 +81,9 @@ DATABASES = {
     'default': {
        #'NAME': BASE_DIR / 'db.sqlite3',
        'ENGINE': 'django.db.backends.oracle',
-        'NAME': '127.0.0.1:1521/orcl',
-        'USER': 'c##pixelmint61',
-        'PASSWORD': 'pixel09',
+        'NAME': '127.0.0.1:1521/xe',
+        'USER': 'c##pixel',
+        'PASSWORD': 'pixel150',
         'TEST':{
     'USER': 'default_test_tbls' ,
     'TBLSPACE': 'default_test_tbls' ,

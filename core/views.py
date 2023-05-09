@@ -64,6 +64,8 @@ def productos(request):
 def productos_copy(request):
     return render(request, 'core/productos_copy.html')
 
+def Catalogodepedidos(request):
+    return render(request, 'core/Catalogodepedidos.html')
 
 def Crearcuenta(request):
 

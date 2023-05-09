@@ -18,16 +18,16 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-   
-    
 </head>
 <body>
-    
+     
     <header>
         <a href="{% url 'index'%}" class="logo"> 
             <img src="../static/img/logo.png" alt="logo tienda">
+           
             
             <h2 class="nombre-tienda"><img src="../static/img/fondopixel2.png" alt=""></h2 style="background: transparent;">
+                <div class="contenedor"> <h1> Catalogo personalizado</h1></div>
          </a>
    <nav> 
         <a href="{% url 'index'%}" class="nav-link"><i class="fa-solid fa-house"></i> Inicio </a>
@@ -37,34 +37,56 @@
        <a href="{% url 'iniciarsesion' %}" class="nav-link"><i class="fa-solid fa-address-card"></i>Iniciar sesión </a>
        <a href="{% url 'EditarPerfil_copy'%}" class="nav-link"><i class="fa-solid fa-user"></i> Editar perfil </a>
        <a href="{% url 'Contacto' %}" class="nav-link"><i class="fa-solid fa-phone"></i> Contacto </a>
-       <a href="{% url 'Catalogodepedidos' %}" class="nav-link"><i class="fa-solid fa-lock"></i> Catalogo </a>
+       
    
        </header>
        
     <div class="fondo">
-        <div class="hora" id="user-count"></div>
-        
-    <div class="contenedor">
-<h2>Pixels mint</h2>
-<p>Somos un emprendimiento de hamma beads, contamos con un amplio catalogo de llaveros y aros ademas contamos con el servicio personalizado del pedido que deseen contamos tambien con peluches amigurumis a pedido o del catalogo.</p>
 
-<h2>Metodos de envios</h2>
-<p>Actualmente contamos con envios a domicilio mediante starken de lunes a viernes de 9:00 a 18:00 y los sabados a domingos de 9:00 a 14:00 h y ademas el producto puede ser retirado en la estacion de metro san pablo.</p>
-
-<h2>Promociones y descuentos</h2>
-<p>En nuestra seccion de promociones de esta semana por la compra de 3 llaveros te puedes llevar uno gratis a eleccion, ademas por comprar consigues un cupon de 20% para tus proximas compras.</p>
-
-<div class="fotosportada"><img src="../static/img/portadafoto.png" alt=""> 
-    <img src="../static/img/portadafoto2.png" alt="">
-    <img src="../static/img/fondofoto3.png" alt="">
-    <img src="../static/img/P16.png" alt=""></div>
-
-    
-
-    
-
-
-</div>
+       
    
+      <div class ="contenedor"></div>
+    <div class="container">
+
+        
+   
+    <div class="row">
+    <div class="col">
+    <div><img src="../img/apex.jpeg"  alt="" class="imgproducto"  > </div>
+    <h3>Llaveros dobles</h3><p>  </div>
+    <div class="col">
+    
+    <div><img src="../img/pokemon.jpeg"  alt=""class="imgproducto"></div>
+    <h3>Figuras 3D </h3></div>
+    <div class="col">
+    
+        
+      <div><img src="../img/pokemon2.jpeg"  alt=""class="imgproducto"></div>
+      <h3>figuras armables</h3>   </div>
+    </div>
+    <div class="row">
+      <div class="col">
+      <div><img src="../img/aros.jpeg"  alt=""class="imgproducto"></div>
+      <h3>Aros</h3>    </div>
+     
+      <div class="col">
+      <div><img src="../img/marcalibros.jpeg"  alt=""class="imgproducto"></div>
+      <h3>Marcadores para libros </h3></div>
+      
+
+      <div class="col">
+      <div><img src="../img/llavero10.jpeg"  alt=""class="imgproducto"></div>
+      <h3>Pisapales</h3>    </div>
+    </div>
+
+      </div>
+      
+
+      
+</div>
+
+
+
+
 </body>
 </html>

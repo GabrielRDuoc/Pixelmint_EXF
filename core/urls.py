@@ -16,6 +16,7 @@ urlpatterns = [
     path('', iniciarsesion, name="iniciarsesion"),
     path('productos/', productos, name="productos"),
     path('Crearcuenta/', register, name="Crearcuenta"),
+    path('Catalogodepedidos/', Catalogodepedidos, name="Catalogodepedidos"),
 
     path('EditarPerfil_copy/', profile, name="EditarPerfil_copy"),
     path('admin/', admin, name="admin"),    

@@ -32,14 +32,4 @@ class Usuario(models.Model):
         return str(self.idUsuario)
     
     
-class carrito(models.Model):
-    idCarrito=models.IntegerField(primary_key=True, verbose_name='id de carro')
-    total=models.IntegerField(verbose_name='Cantidad')
-    def __str__(self):
-        return self.idCarrito
-class item(models.Model):
-    Product=models.ForeignKey(Producto, on_delete=models.CASCADE,related_name='item')
-    cart=models.ForeignKey(carrito,on_delete= models.CASCADE,related_name='cart_item')
-    cantidad=models.IntegerField(default=0)
-    def __str__(self):
-        return self.Product.nombreProducto
+

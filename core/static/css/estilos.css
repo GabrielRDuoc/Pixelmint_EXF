@@ -238,3 +238,11 @@ span{
     border-style: solid ;
     border-color: black;
     border-width: 10px;}
+
+
+    .giphy{
+width: 100px;
+height: 100px;
+background-image: url('../static/img/1iWi.gif');
+
+    }
